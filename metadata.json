@@ -1,0 +1,6 @@
+{
+  "name": "Connexions '26 - DG Vaishnav B.Com A&F",
+  "description": "Official portal for Connexions '26, an intra-departmental F1-themed fest by DG Vaishnav College, Department of B.Com (Accounting & Finance). Featuring full rule book, 8 event registration portals, and interactive race telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

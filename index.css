@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #07090e;
+    color: #f1f5f9;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-racing {
+    font-family: 'Chakra Petch', sans-serif;
+  }
+
+  .font-mono-numbers {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Carbon fiber grid pattern */
+.bg-carbon-pattern {
+  background-color: #07090e;
+  background-image: 
+    radial-gradient(#1e293b 0.75px, transparent 0.75px),
+    radial-gradient(#1e293b 0.75px, #07090e 0.75px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Chequered flag border */
+.chequered-bar {
+  background-image: 
+    linear-gradient(45deg, #111 25%, transparent 25%), 
+    linear-gradient(-45deg, #111 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #111 75%), 
+    linear-gradient(-45deg, transparent 75%, #111 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+}
+
+/* Curb / Racing curb stripes */
+.curb-pattern {
+  background: repeating-linear-gradient(
+    -45deg,
+    #e10600,
+    #e10600 12px,
+    #f8fafc 12px,
+    #f8fafc 24px
+  );
+}
+
+.curb-pattern-rb {
+  background: repeating-linear-gradient(
+    -45deg,
+    #041026,
+    #041026 12px,
+    #fcd500 12px,
+    #fcd500 24px
+  );
+}
+
+/* Print Styles for Rule Book */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
